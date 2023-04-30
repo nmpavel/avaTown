@@ -2,11 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import LikeButton from './LikeButton'
-import RatingStar from './RatingStar'
-
+import { Rating } from 'react-simple-star-rating'
 const ProductCard = () => {
   return (
-    <div>
+    <div className=' text-sm'>
         <Image 
         src="/assets/images/avatarPictures/avatar1.png"
         height={300}
@@ -14,9 +13,9 @@ const ProductCard = () => {
         alt='avatar1'
         className='rounded-lg'
         />
-        <p>Avatar name "Avatown" -nice original avatar of Avatown</p>
+        <p>Avatar name &quot;Avatown&quot; -nice original avatar of Avatown</p>
         <div className='flex flex-row justify-between items-center'>
-            <RatingStar/>
+        <Rating initialValue={3}/>
             <p>4.7 & 100Likers</p>
             <LikeButton/>
         </div>
