@@ -1,7 +1,12 @@
+import Market from "@/components/Market";
+import Layout from "@/layout/Layout";
+
 export default function Home() {
   return (
     <>
-     <p className="font-bold">Hello</p>
+     <Layout>
+      <Market/>
+     </Layout>
     </>
   )
 }
