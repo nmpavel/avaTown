@@ -1,14 +1,13 @@
 import React, { useState } from 'react'
-import Heart from "react-animated-heart";
+import styles from "../styles/LikeButton.module.css"
 
 const LikeButton = () => {
-    const [isClick, setClick] = useState<boolean>(false);
-    
+  const [like, setLike] = useState<boolean>(false);
   return (
-    <div>
-    <Heart  isClick={isClick} onClick={() => setClick(!isClick)} />
-  </div>
-  )
+      <div onClick={()=>setLike(!like)} className={`${styles.heart} transition-all duration-300  ${like && styles.clickedHeart}`}>
+
+      </div>
+  );
 }
 
 export default LikeButton

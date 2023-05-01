@@ -8,7 +8,7 @@ const SIdeBar = () => {
   const [subSubCategory, setSubSubCategory] = useState<string>("");
 
   return (
-    <div className=" w-64 text-xs pl-6 pt-10 ">
+    <div className=" fixed  w-64 text-xs pl-6 pt-10 ">
         {/* Category Container */}
       <div className="flex flex-col justify-start items-start">
         <h1 className="font-semibold">Category</h1>

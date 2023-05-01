@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductCard from './ProductCard'
 import Select from 'react-select';
 import { DownArrow } from '@/Icons/DownArrow';
+import { avatars } from '@/models/ProductCard';
+import AllItems from './AllItems';
 
 const options = [
     { value: 'LtoH', label: 'Price: Low to High' },
@@ -39,9 +41,15 @@ const reactSelectStyles = {
     neutral50: 'black',
   });
 const Market = () => {
+  const [window,setWindow] = useState<string>("allItems");
   return (
-    <div>
-       <div className='flex justify-end'>
+    <div className='px-6'>
+       <div className='flex justify-between items-center'>
+        {
+          window==="allItems" && (
+            <h1 className='text-lg font-bold'>All Items</h1>
+          )
+        }
        <Select
           onChange={(e) => {
             console.log(e);
@@ -54,13 +62,7 @@ const Market = () => {
           components={{ DropdownIndicator: () => <DownArrow />, IndicatorSeparator: () => null }}
         />
        </div>
-       <div className='grid grid-cols-4 gap-4 '>
-        
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        <ProductCard/>
-        </div>
+      <AllItems/>
     </div>
   
   )
