@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import SIdeBar from "@/layout/SIdeBar";
+import { ReactNode, createContext, useContext, useState } from "react";
 
 interface SidebarContextType {
     show: string;
@@ -17,8 +18,12 @@ interface SidebarContextType {
     setSubCategory: () => {},
     setSubSubCategory: () => {},
   });
-
-  const SidebarContextProvider = () => {
+  type SidebarContextProviderProps ={
+    children: ReactNode;
+  }
+  export const useSidebarContext = () => useContext(SidebarContext);
+  
+  const SidebarContextProvider = ({children}:SidebarContextProviderProps) => {
     const [show, setShow] = useState("");
     const [subCategory, setSubCategory] = useState("");
     const [subSubCategory, setSubSubCategory] = useState("");
@@ -27,7 +32,8 @@ interface SidebarContextType {
       <SidebarContext.Provider
         value={{ show, subCategory, subSubCategory, setShow, setSubCategory, setSubSubCategory }}
       >
-        {/* your sidebar code */}
+        <SIdeBar/>
       </SidebarContext.Provider>
     );
   };
+  export default SidebarContextProvider;

@@ -8,7 +8,7 @@ const AllItems = () => {
        <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 '>
         {
           avatars.map((avatar)=>{
-            return <ProductCard avatar={avatar} />
+            return <ProductCard key={avatar.id} avatar={avatar} />
           })
         }
         </div>
