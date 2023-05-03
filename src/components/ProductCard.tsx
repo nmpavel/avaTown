@@ -15,12 +15,12 @@ interface ProductCardProps {
 const ProductCard = ({avatar}:ProductCardProps) => {
   const[showLink, setShowLink]=useState<boolean>(false);
   return (
-    <div className='space-y-[1px] text-sm w-80'>
+    <div className='space-y-[1px] text-sm w-96'>
         <div className='relative'>
         <Image 
         src={avatar.image}
         height={300}
-        width={320}
+        width={385}
         alt='avatar1'
         className='rounded-lg'
         />

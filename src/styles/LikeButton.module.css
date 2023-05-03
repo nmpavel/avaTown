@@ -4,6 +4,8 @@
     aspect-ratio: 1;
     border-image: radial-gradient(gray 69%,#0000 70%) 84.5% fill/100%;
     clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    transition: all 500;
+    cursor: pointer;
   }
   .clickedHeart {
     display:inline-block;
@@ -11,4 +13,5 @@
     aspect-ratio: 1;
     border-image: radial-gradient(red 69%,#0000 70%) 84.5% fill/100%;
     clip-path: polygon(-41% 0,50% 91%, 141% 0);
+    cursor: pointer;
   }

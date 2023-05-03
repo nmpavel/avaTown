@@ -43,7 +43,7 @@ const reactSelectStyles = {
 const Market = () => {
   const [window,setWindow] = useState<string>("allItems");
   return (
-    <div className='px-6'>
+    <div className=' '>
        <div className='flex justify-between items-center'>
         {
           window==="allItems" && (
