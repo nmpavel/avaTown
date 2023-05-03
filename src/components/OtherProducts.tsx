@@ -13,7 +13,7 @@ const OtherProducts = () => {
         <h1 className='text-2xl font-bold py-4'>Other Products</h1>
         {
             newArray.map((avatar)=>{
-                return <ProductCard avatar={avatar} />
+                return <ProductCard key={avatar.id} avatar={avatar} />
             })
         }
     </div>
