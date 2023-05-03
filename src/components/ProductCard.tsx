@@ -15,7 +15,8 @@ interface ProductCardProps {
 const ProductCard = ({avatar}:ProductCardProps) => {
   const[showLink, setShowLink]=useState<boolean>(false);
   return (
-    <div className='space-y-[1px] text-sm w-96'>
+<Link href={avatar.id}>
+<div className='space-y-[1px] text-sm w-96'>
         <div className='relative'>
         <Image 
         src={avatar.image}
@@ -62,6 +63,7 @@ const ProductCard = ({avatar}:ProductCardProps) => {
         </div>
         </div>
     </div>
+</Link>
   )
 }
 
