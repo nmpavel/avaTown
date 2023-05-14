@@ -33,7 +33,7 @@ const ProductDetails = () => {
   return (
     <div className=" w-full  flex flex-row ">
       <div className="flex flex-col ">
-        <div className="flex w-[1200px] h-[600px] relative top-32 left-6 bg-white rounded-xl overflow-hidden shadow-2xl">
+        <div className="flex w-[1200px] h-[600px] relative top-32 bg-white rounded-xl overflow-hidden shadow-2xl">
           <div className="bg-purple-400 h-full w-[1200px] px-8 flex overflow-hidden justify-center items-center">
             <img
               src={product?.image}
