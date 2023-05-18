@@ -1,0 +1,31 @@
+.petty-paginator {
+  @apply py-4 px-2 flex justify-center items-center gap-2 mt-3;
+}
+
+.petty-paginator .page a {
+  @apply no-underline decoration-current text-sm;
+}
+
+.petty-paginator .page {
+  @apply p-1 rounded-md w-8 h-8 flex items-center justify-center cursor-pointer bg-white text-black font-semibold shadow-md;
+}
+
+.petty-paginator .page:not(.selected) {
+  @apply hover:bg-slate-300;
+}
+
+.petty-paginator .selected {
+  @apply text-white font-semibold bg-black shadow-md;
+}
+
+.petty-paginator .navigation-buttton {
+  @apply py-1 px-2 rounded-md w-auto h-8 flex items-center justify-center cursor-pointer bg-white font-semibold text-black shadow-md;
+}
+
+.petty-paginator .navigation-buttton:not([disabled]) {
+  @apply hover:bg-slate-300;
+}
+
+.petty-paginator .navigation-buttton[disabled] {
+  @apply text-neutral-600 cursor-not-allowed;
+}

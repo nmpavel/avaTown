@@ -209,7 +209,7 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
   {
     id: "21",
@@ -219,7 +219,7 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
   {
     id: "22",
@@ -229,7 +229,7 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
   {
     id: "23",
@@ -239,7 +239,7 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
   {
     id: "24",
@@ -249,7 +249,7 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
   {
     id: "25",
@@ -259,6 +259,6 @@ export const avatars: Product[] = [
     owner_name: "Avatar Joes",
     owner_logo: "/assets/images/avatarPictures/avatar1.png",
     price: "50",
-    category: "Female",
+    category: "Male",
   },
 ];

@@ -1,11 +1,10 @@
 import Checkbox from "@/components/Checkbox";
+import { useSidebarContext } from "@/contexts/SidebarContext";
 import Link from "next/link";
 import React, { useState } from "react";
 
 const SIdeBar = () => {
-  const [show, setShow] = useState<string>("");
-  const [subCategory, setSubCategory] = useState<string>("");
-  const [subSubCategory, setSubSubCategory] = useState<string>("");
+  const { show, subCategory, subSubCategory, setShow, setSubCategory, setSubSubCategory } = useSidebarContext();
 
   return (
     <div className=" fixed  w-64 text-xs pl-6 pt-10 ">
@@ -22,6 +21,7 @@ const SIdeBar = () => {
         {show === "fullAvatar" && (
           <div className="pl-2">
             <button
+              
               className={`${subCategory === "human" ? " underline" : " "}`}
               onClick={() => setSubCategory("human")}
             >

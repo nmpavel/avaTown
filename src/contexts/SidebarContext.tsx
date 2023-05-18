@@ -32,7 +32,7 @@ interface SidebarContextType {
       <SidebarContext.Provider
         value={{ show, subCategory, subSubCategory, setShow, setSubCategory, setSubSubCategory }}
       >
-        <SIdeBar/>
+        {children}
       </SidebarContext.Provider>
     );
   };

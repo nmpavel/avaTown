@@ -14,6 +14,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ avatar }: ProductCardProps) => {
   const [showLink, setShowLink] = useState<boolean>(false);
+  
   return (
     <div className="space-y-[1px] text-sm w-96">
       <Link href={avatar.id}>
@@ -60,14 +61,13 @@ const ProductCard = ({ avatar }: ProductCardProps) => {
         </p>
         <div>
           {showLink && (
-            <div className=" cursor-pointer absolute z-50 right-0 -top-8 flex flex-row w-24 space-x-2 border-2 border-gray-400 rounded-lg py-1 px-2">
+            <div id="link" className=" cursor-pointer absolute z-50 right-0 -top-8 flex flex-row w-24 space-x-2 border-2 border-gray-400 rounded-lg py-1 px-2">
               <Image src={link} height={15} width={15} alt="link" />
               <p className="text-xs whitespace-nowrap">Copy Link</p>
             </div>
           )}
           <UploadIcon
-            onMouseOver={() => setShowLink(true)}
-            onMouseLeave={() => setShowLink(true)}
+            onClick={() => setShowLink(!showLink)}
             className=" cursor-pointer"
           />
         </div>
