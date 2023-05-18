@@ -17,8 +17,8 @@ const ProductCard = ({ avatar }: ProductCardProps) => {
   
   return (
     <div className="space-y-[1px] text-sm w-[350px] ">
-      <Link href={avatar.id}>
         <div className="relative">
+          <Link href={avatar.id}>
           <Image
             src={avatar.image}
             height={300}
@@ -26,12 +26,12 @@ const ProductCard = ({ avatar }: ProductCardProps) => {
             alt="avatar1"
             className="rounded-lg"
           />
+          </Link>
           <button className="absolute top-2 right-4 flex space-x-2 bg-blue-600 p-1 rounded-lg">
             <Image src={cart} height={20} width={20} alt="cart" />
             <p className="text-white">Add</p>
           </button>
         </div>
-      </Link>
       <p className=" text-base font-semibold">
         Avatar name &quot;Avatown&quot; -nice original avatar of Avatown
       </p>
