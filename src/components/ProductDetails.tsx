@@ -32,7 +32,7 @@ const ProductDetails = () => {
   console.log(product);
   return (
     <div className=" w-full  flex flex-row ">
-      <div className="flex flex-col ">
+      <div className="flex flex-col px-6 ">
         <div className="flex w-[1200px] h-[600px] relative top-32 bg-white rounded-xl overflow-hidden shadow-2xl">
           <div className="bg-purple-400 h-full w-[1200px] px-8 flex overflow-hidden justify-center items-center">
             <img
@@ -118,10 +118,10 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="relative top-36">
-        <CommentsSection allComments={comments} />
+          <CommentsSection allComments={comments} />
         </div>
       </div>
-      <OtherProducts/>
+      <OtherProducts />
     </div>
   );
 };

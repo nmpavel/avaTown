@@ -95,7 +95,7 @@ const CommentsSection = ({ allComments }: Props) => {
   
 
   return (
-    <div className='mx-6 mb-6 rounded-2xl shadow-2xl w-[1200px] bg-white px-16 py-8  '>
+    <div className=' mb-6 rounded-2xl shadow-2xl w-[1200px] bg-white px-16 py-8  '>
       <h2 className="text-3xl font-bold mb-8">Comments:</h2>
 
       <div className='flex flex-col space-y-6'>

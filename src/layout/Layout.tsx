@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
         <Header/>
         <div className="flex relative top-16 ">
           <SIdeBar/>
-          <main className="flex-1 absolute left-48  overflow-y-auto  ">{children}</main>
+          <main className="flex-1 absolute left-60  overflow-y-auto  ">{children}</main>
         </div>
       </div>
     </SidebarContextProvider>

@@ -53,7 +53,7 @@ const Market = () => {
   const [window, setWindow] = useState<string>("allItems");
   return (
     <div className=" ">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center py-3">
         {show === "fullAvatar" ? (
           <h1 className="text-lg font-bold">{`Full Avatar
             ${subCategory === "human" ? "-> Human Based" : ""}
@@ -68,7 +68,7 @@ const Market = () => {
             console.log(e);
           }}
           options={options}
-          className="text-black w-48"
+          className="text-black w-48 bg-gray-100"
           styles={reactSelectStyles}
           theme={reactSelectTheme}
           placeholder={<div>Select</div>}

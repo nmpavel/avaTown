@@ -16,13 +16,13 @@ const ProductCard = ({ avatar }: ProductCardProps) => {
   const [showLink, setShowLink] = useState<boolean>(false);
   
   return (
-    <div className="space-y-[1px] text-sm w-96">
+    <div className="space-y-[1px] text-sm w-[350px] ">
       <Link href={avatar.id}>
         <div className="relative">
           <Image
             src={avatar.image}
             height={300}
-            width={385}
+            width={400}
             alt="avatar1"
             className="rounded-lg"
           />
